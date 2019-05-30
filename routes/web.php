@@ -11,6 +11,4 @@
   |
  */
 
-$router->get('/', function() {
-    return '<h1>NetSpeed</h1>';
-});
+$router->get('/', 'HomeController@index');
