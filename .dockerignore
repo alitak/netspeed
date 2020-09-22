@@ -1,0 +1,6 @@
+./src/vendor
+./src/node_modules
+./src/start.sh
+./src/horizon.conf
+./src/public/adminer
+./src/.env

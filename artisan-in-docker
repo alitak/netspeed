@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+docker exec -it netspeed php artisan "$@"
+if [ $? -eq 0 ]; then
+    docker exec -it netspeed chown -R `id -u`:`id -g` app/ database/
+fi

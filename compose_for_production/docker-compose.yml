@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+
+  netspeed:
+    container_name: netspeed
+    image: netspeed
+    environment:
+      - CONTAINER_ROLE=scheduler
+    volumes:
+      - ./.env:/var/www/.env
